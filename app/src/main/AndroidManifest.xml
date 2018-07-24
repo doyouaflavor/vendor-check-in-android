@@ -17,6 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".page.InviteActivity" />
+        <activity android:name=".page.RegisterActivity" />
+        <activity android:name=".page.ItemListActivity" />
+        <activity android:name=".page.ItemCompleteActivity" />
     </application>
 
 </manifest>
