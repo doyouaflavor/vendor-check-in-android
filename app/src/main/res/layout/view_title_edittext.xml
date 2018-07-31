@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="55dp"
+    android:background="@drawable/back_edittext"
     android:gravity="center_vertical"
     android:orientation="horizontal">
 
@@ -10,11 +11,21 @@
         android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:letterSpacing="0.03"
+        android:paddingEnd="34dp"
+        android:paddingStart="20dp"
+        android:textColor="#202532"
+        android:textSize="16sp"
         tools:text="sample" />
 
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:letterSpacing="0.03"
+        android:textColor="@color/dark_grey"
+        android:textColorHint="#bdc6d2"
+        android:textSize="16sp"
         tools:hint="hint" />
 </LinearLayout>
