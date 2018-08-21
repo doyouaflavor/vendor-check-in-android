@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <tw.doyouaflavor.vendorcheckin.ui.InfiniteViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:layout_height="133dp"/>
+
+</android.support.constraint.ConstraintLayout>
