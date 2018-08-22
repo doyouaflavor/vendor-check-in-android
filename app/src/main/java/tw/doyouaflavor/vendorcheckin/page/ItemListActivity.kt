@@ -62,16 +62,16 @@ class ItemAdapter(val items: List<ItemViewModel>) : RecyclerView.Adapter<Recycle
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         holder.itemView.textName.text = items[position].name
-        holder.itemView.checkbox.isSelected = items[position].selected
-        holder.itemView.checkbox.setOnCheckedChangeListener { _: CompoundButton, b: Boolean ->
-            items[position].selected = b
+        holder.itemView.checkbox.isChecked = items[position].selected
+        holder.itemView.checkbox.setOnClickListener {
+            items[position].selected = holder.itemView.checkbox.isChecked
             onItemSelected.invoke(result())
         }
-//        holder.itemView.setOnClickListener {
-//            items[position].selected = items[position].selected.not()
-//            holder.itemView.checkbox.isSelected =items[position].selected
-//            count()
-//        }
+        holder.itemView.setOnClickListener {
+            holder.itemView.checkbox.isChecked = holder.itemView.checkbox.isChecked.not()
+            holder.itemView.checkbox.callOnClick()
+            onItemSelected.invoke(result())
+        }
     }
 }
 
