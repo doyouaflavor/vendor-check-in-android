@@ -17,5 +17,6 @@ class OffWorkActivity : AppCompatActivity() {
         viewPager.setPageTransformer(false, ScaleTransformer())
         viewPager.offscreenPageLimit = 4
         viewPager.currentItem = 19
+
     }
 }
